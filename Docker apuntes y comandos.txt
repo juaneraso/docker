@@ -1,0 +1,23 @@
+
+
+para crear imagen de contenedores
+ 
+docker build -t miaplicacion:1 .
+
+docker create -p3003:3003 --name elefante miapi:1 
+
+----contenedor 
+
+
+./ffmpeg/bin/ffmpeg -y -i audios/api_0.mp3 audios/pruebareal.wav
+
+./Rhubarb/rhubarb -f json -o audios/message_prueba.json audios/api_0.wav -r phoneti
+
+------- compose dev ----- 
+
+
+docker compose -f docker-compose-dev.yml up
+
+  "nodemonConfig": { 
+    "legacyWatch": true
+}
